@@ -10,10 +10,11 @@ h3{
 #btn1{
 	margin:50px auto;
 	display:block;
+	width:100%;
 }
 #dlist{
 	margin:30px;
-	width:100%;
+	width:85%;
 	display:inline-block;
 }
 .wid{

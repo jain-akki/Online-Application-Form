@@ -6,11 +6,11 @@
 <head runat="server">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -54,9 +54,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <asp:Button ID="btn1" runat="server" Text="Continue" CssClass="btn btn-warning" />
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <asp:Button ID="btn1" runat="server" Text="Continue" CssClass="btn btn-warning" onclick="btn1_Click" />
                 </div>
             </div>
         <!--Section-->
