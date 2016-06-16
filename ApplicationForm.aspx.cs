@@ -120,7 +120,7 @@ public partial class ApplicationForm : System.Web.UI.Page
                 Session["city"] = TextBox5.Text;
                 Session["email"] = TextBox6.Text;
 
-                //captcha1.ValidateCaptcha(TextBox9.Text.Trim());
+                captcha1.ValidateCaptcha(TextBox9.Text.Trim());
                 Label1.Text = "<br/> Your form has been submitted successfully.TakePreview Now,Your Registration Number is: ";
                 /*try
                 {
@@ -154,6 +154,7 @@ public partial class ApplicationForm : System.Web.UI.Page
                             Label2.Text = null;
                         }
                     }
+                 
                     else
                     {
                         Label3.ForeColor = System.Drawing.Color.Red;
@@ -169,6 +170,12 @@ public partial class ApplicationForm : System.Web.UI.Page
                 {
                 con.Close();
                 }*/
+                if (!captcha1.UserValidated)
+                {
+                    Label3.ForeColor = System.Drawing.Color.Red;
+                    Label3.Text = "Enter Valid Captcha code";
+                    Label2.Text = null;
+                }
             }
         //}
     }

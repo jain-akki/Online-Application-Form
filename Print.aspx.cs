@@ -11,17 +11,18 @@ public partial class Print : System.Web.UI.Page
     {    
         //declared the function
         Retrieve_Image_signFromDB();
-  
+
         // holds the session variables  
-        Label1.Text = Session["number"].ToString();  
-        Label2.Text = Session["name"].ToString();  
-        Label3.Text = Session["category"].ToString();  
-        Label4.Text = Session["dob"].ToString();  
-        Label5.Text = Session["mobile"].ToString();  
-        Label6.Text = Session["qualification"].ToString();  
-        Label7.Text = Session["city"].ToString();  
-        Label8.Text = Session["email"].ToString();  
-        Label9.Text = System.DateTime.Today.ToShortDateString().ToString();  
+        Label1.Text = Session["number"].ToString();
+        Label2.Text = Session["name"].ToString();
+        Label3.Text = Session["category"].ToString();
+        Label4.Text = Session["dob"].ToString();
+        Label5.Text = Session["mobile"].ToString();
+        Label6.Text = Session["qualification"].ToString();
+        Label7.Text = Session["city"].ToString();
+        Label8.Text = Session["email"].ToString();
+        Label9.Text = Session["city"].ToString();
+        Label10.Text = System.DateTime.Today.ToShortDateString().ToString();  
     }
   
     private void Retrieve_Image_signFromDB()  
