@@ -15,6 +15,12 @@ h3{
 	display:block;
 	width:100%;
 }
+.txtbox{
+	width:70%;
+}
+.rbtn{
+	padding:15px;
+}
 #dlist{
 	margin:30px;
 	width:85%;
