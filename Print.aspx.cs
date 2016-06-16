@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 public partial class Print : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
-    {    
+    {
         //declared the function
         Retrieve_Image_signFromDB();
 
@@ -22,7 +22,8 @@ public partial class Print : System.Web.UI.Page
         Label7.Text = Session["city"].ToString();
         Label8.Text = Session["email"].ToString();
         Label9.Text = Session["city"].ToString();
-        Label10.Text = System.DateTime.Today.ToShortDateString().ToString();  
+        Label10.Text = System.DateTime.Today.ToShortDateString().ToString();
+        Label11.Text = Session["coursename"].ToString();
     }
   
     private void Retrieve_Image_signFromDB()  
@@ -31,4 +32,10 @@ public partial class Print : System.Web.UI.Page
         Image1.ImageUrl = "Default3.aspx";
         Image2.ImageUrl = "Default4.aspx";  
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("ApplicationForm.aspx"); 
+    }
+          
 }

@@ -1,0 +1,77 @@
+﻿//ConfigurationManager.ConnectionStrings["regConnectionString"].ConnectionString
+//SqlConnection con = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=Database;Integrated Security=True;Pooling=False");
+
+//if (size_img > 25600 | size_sign > 12228)
+        //{
+        //    Label1.Text = "Please Enter image size less than 25kb and Signature size less than 12kb.Your image and signature size(in byte) are:- " + size_img + ',' + size_sign;
+        //    Label2.Text = null;
+        //}
+        //else
+        //{
+
+
+/*try
+        {
+
+            if (Upload_image.HasFile && Upload_sign.HasFile && captcha1.UserValidated)
+            {
+
+                int i = cmd.ExecuteNonQuery();
+
+                if (i > 0)
+                {
+                    // Send Regisration number to user's mail box after submitting the form successfully
+                    SmtpClient smtpc = new SmtpClient("smtp.gmail.com");//smtp.mail.yahoo.com
+                    smtpc.Port = 578;//465
+                    smtpc.EnableSsl = true;
+                    smtpc.UseDefaultCredentials = false;
+                    string user = "akshay.jain@sscbs.du.ac.in"; //<--Enter your gmail id here
+                    string pass = "Piland@akki";//<--Enter Your gmail password here
+                    string sub = "Form filling Application:"; //Subject for your website
+                    string msg = "Webcome to http://easyweb.somee.com Your Registration Number is: " + Label2.Text;  //Message body
+                    smtpc.Credentials = new NetworkCredential(user, pass);
+                    MailMessage email = new MailMessage(user, TextBox6.Text, sub, msg);
+                    smtpc.Send(email);
+                    Label1.Text = "Your form has been submitted successfully.TakePreview Now,Your Registration Number is: ";
+                    Label3.Text = null;
+                }
+                else
+                {
+                    Label1.Text = "Your form has been not submitted successfully try again later";
+                    Label3.Text = null;
+                    Label2.Text = null;
+                }
+            }
+                 
+            else
+            {
+                Label3.ForeColor = System.Drawing.Color.Red;
+                Label3.Text = "Enter Valid Captcha code";
+                Label2.Text = null;
+            }
+        }
+        catch (Exception ex)
+        {
+            Label1.Text = ex.Message;
+        }
+        finally
+        {
+        con.Close();
+        }*/
+
+
+//protected void Button1_Click(object sender, EventArgs e)
+    //{
+
+    //    captcha1.ValidateCaptcha(TextBox11.Text.Trim());
+    //    if (captcha1.UserValidated)
+    //    {
+    //        Label11.ForeColor = System.Drawing.Color.Green;
+    //        Label11.Text = "You have Entered Valid Captcha Characters";
+    //    }
+    //    else
+    //    {
+    //        Label11.ForeColor = System.Drawing.Color.Red;
+    //        Label11.Text = "You have Entered InValid Captcha Characters please Enter again";
+    //    }
+    //}

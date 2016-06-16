@@ -32,10 +32,11 @@
     <!--Header-->
     <!--Section-->
     <div class="row pad">
-        <div class="col-xs-10">
+        <div class="col-xs-9">
+            <asp:Button ID="Button1" runat="server" Text=" < Back" OnClick="Button1_Click" CssClass="btn btn-default" />
         </div>
-        <div class="col-xs-2">
-            <a id="A1" href="#" runat="server" onclick="javascript :print_page();"><b>Click to Print</b></a>
+        <div class="col-xs-3">
+            <asp:HyperLink ID="Button2" runat="server" Text="Click to Print >" OnClick="javascript :print_page();" CssClass="btn btn-primary"></asp:HyperLink>
         </div>
     </div>
     <div class="row pad">
@@ -103,6 +104,14 @@
         </div>
         <div class="col-xs-8">
             <asp:Label ID="Label8" runat="server" Text="Label-eid"></asp:Label>
+        </div>
+    </div>
+    <div class="row pad">
+        <div class="col-xs-4">
+            <b>Course Name</b>
+        </div>
+        <div class="col-xs-8">
+            <asp:Label ID="Label11" runat="server" Text="Label-eid"></asp:Label>
         </div>
     </div>
     <div class="row pad">

@@ -131,6 +131,16 @@
                     </asp:TableRow>
                     <asp:TableRow CssClass="form-group">
                         <asp:TableCell>
+                        Course Name
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:Label ID="Label4" runat="server" Text=""></asp:Label><br />
+                        </asp:TableCell>
+                        <asp:TableCell>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow CssClass="form-group">
+                        <asp:TableCell>
                         Upload Image
                         </asp:TableCell>
                         <asp:TableCell>
@@ -168,7 +178,7 @@
                         Enter Captcha Code
                         </asp:TableCell>
                         <asp:TableCell>
-                            <asp:TextBox ID="TextBox9" runat="server" type="text" CssClass="form-control txtbox"></asp:TextBox>
+                            <asp:TextBox ID="TextBox8" runat="server" type="text" CssClass="form-control txtbox"></asp:TextBox>
                         </asp:TableCell>
                         <asp:TableCell>
                             <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
