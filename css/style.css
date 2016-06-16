@@ -7,6 +7,9 @@ h3{
 	text-align:center;
 	padding:20px;
 }
+#header{
+	background:white;
+}
 #btn1{
 	margin:50px auto;
 	display:block;

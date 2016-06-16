@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>Oxford Institute Student Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,9 +13,9 @@
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" class="container">
         <!--Header-->
-            <div class="row well text-center">
+            <div id="header" class="row text-center well">
               <div class="col-md-4"><asp:Image ID="Image1" ImageUrl="img/left-logo.jpg" AlternateText="Oxford Institute Logo" runat="server"/></div>
               <div class="col-md-4">Units of Hindustan Soft Education Ltd.<br />An ISO 9001-2008 Company</div>
               <div class="col-md-4"><asp:Image ID="Image2" ImageUrl="img/right-logo.jpg" AlternateText="Oxford Institute Logo" runat="server"/></div>
